@@ -1,7 +1,7 @@
 package org.sparta.mv;
 
-public class IsPalendromeChecker {
-    public static boolean isPalendrome (String word){
+public class IsPalindromeChecker {
+    public static boolean isPalindrome (String word){
         char[] wordArr = word.toLowerCase().toCharArray();
         int wordLen = word.length();
         int lastLetterIndex = wordLen - 1;
@@ -16,5 +16,16 @@ public class IsPalendromeChecker {
             return true;
         }
         return false;
+    }
+
+    public static String longestPalindrome(String sentence){
+        String[] words =  sentence.split(" ");
+        String longestP = "hi";
+        for (String word:words){
+            if (isPalindrome(word) && longestP.length() < word.length()){
+                longestP = word;
+            }
+        }
+        return longestP;
     }
 }
