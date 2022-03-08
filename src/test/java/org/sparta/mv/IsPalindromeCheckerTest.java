@@ -16,7 +16,11 @@ public class IsPalindromeCheckerTest {
         Assertions.assertEquals("racecar", IsPalindromeChecker.longestPalindrome("I have a racecar that makes me say wow"));
         Assertions.assertEquals("RAceCar", IsPalindromeChecker.longestPalindrome("I have a RAceCar that makes me say wOw"));
         Assertions.assertEquals("There is no palindrome", IsPalindromeChecker.longestPalindrome("I have a car that amazes me"));
-
-
+    }
+    @Test
+    void fibonacciFinder(){
+        Assertions.assertEquals(0, FibonacciSequence.fibbonacciFinder(0));
+        Assertions.assertEquals("I need a positive integer to work!", FibonacciSequence.fibbonacciFinder(-2));
+        Assertions.assertEquals(8, FibonacciSequence.fibbonacciFinder(6));
     }
 }
