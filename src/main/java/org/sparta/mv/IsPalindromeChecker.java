@@ -1,19 +1,22 @@
 package org.sparta.mv;
 
 public class IsPalindromeChecker {
-    public static boolean isPalindrome (String word){
-        char[] wordArr = word.toLowerCase().toCharArray();
-        int wordLen = word.length();
-        int lastLetterIndex = wordLen - 1;
-        int sameLetters = 0;
-        for (int i = 0; i< wordLen/2 ; i++){
-            if(wordArr[i] == wordArr[lastLetterIndex]){
-                sameLetters ++;
+    public static boolean isPalindrome (String word) {
+        if (word.length() != 0) {
+            char[] wordArr = word.toLowerCase().toCharArray();
+            int wordLen = word.length();
+            int lastLetterIndex = wordLen - 1;
+            int sameLetters = 0;
+            for (int i = 0; i < wordLen / 2; i++) {
+                if (wordArr[i] == wordArr[lastLetterIndex]) {
+                    sameLetters++;
+                }
+                lastLetterIndex--;
             }
-            lastLetterIndex--;
-        }
-        if(sameLetters >= wordLen/2){
-            return true;
+            if (sameLetters >= wordLen / 2) {
+                return true;
+            }
+            return false;
         }
         return false;
     }
