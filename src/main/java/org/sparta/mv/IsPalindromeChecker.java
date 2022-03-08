@@ -23,11 +23,14 @@ public class IsPalindromeChecker {
 
     public static String longestPalindrome(String sentence){
         String[] words =  sentence.split(" ");
-        String longestP = "hi";
+        String longestP = "";
         for (String word:words){
             if (isPalindrome(word) && longestP.length() < word.length()){
                 longestP = word;
             }
+        }
+        if (longestP.length() <= 1){
+            return "There is no palindrome";
         }
         return longestP;
     }
