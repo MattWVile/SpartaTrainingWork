@@ -6,8 +6,8 @@ package org.sparta.mv;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main( String[] args ) {
+        String palendrome = "Racecar";
+        System.out.println(IsPalendromeChecker.isPalendrome(palendrome));
     }
 }
