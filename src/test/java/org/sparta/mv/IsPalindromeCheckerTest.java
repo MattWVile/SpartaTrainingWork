@@ -19,8 +19,8 @@ public class IsPalindromeCheckerTest {
     }
     @Test
     void fibonacciFinder(){
-        Assertions.assertEquals(0, FibonacciSequence.fibbonacciFinder(0));
-        Assertions.assertEquals("I need a positive integer to work!", FibonacciSequence.fibbonacciFinder(-2));
-        Assertions.assertEquals(8, FibonacciSequence.fibbonacciFinder(6));
+        Assertions.assertEquals(0, FibonacciSequence.fibonacciFinder(0));
+        Assertions.assertEquals(0, FibonacciSequence.fibonacciFinder(-2));
+        Assertions.assertEquals(8, FibonacciSequence.fibonacciFinder(6));
     }
 }
