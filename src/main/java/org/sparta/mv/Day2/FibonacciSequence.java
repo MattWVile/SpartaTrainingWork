@@ -1,4 +1,4 @@
-package org.sparta.mv.Day1;
+package org.sparta.mv.Day2;
 
 public class FibonacciSequence {
 //    public static int fibonacciFinder(int num){

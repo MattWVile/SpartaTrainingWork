@@ -1,9 +1,8 @@
 package org.sparta.mv;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.sparta.mv.Day1.IsPalindromeChecker;
+import org.sparta.mv.Day2.IsPalindromeChecker;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

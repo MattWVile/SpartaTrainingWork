@@ -3,7 +3,7 @@ package org.sparta.mv;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.sparta.mv.tdd.FizzBuzzGenerator;
+import org.sparta.mv.Day3.tdd.FizzBuzzGenerator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
