@@ -1,4 +1,4 @@
-package org.sparta.mv.enums;
+package org.sparta.mv.Day3.enums;
 
 import java.util.Arrays;
 

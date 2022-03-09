@@ -1,4 +1,4 @@
-package org.sparta.mv.tdd;
+package org.sparta.mv.Day3.tdd;
 
 public class FizzBuzzGenerator {
     public static String getFizzBuzzValue(int i) {

@@ -1,4 +1,4 @@
-package org.sparta.mv.Day1;
+package org.sparta.mv.Day2;
 
 public class IsPalindromeChecker {
     public static boolean isPalindrome (String word) {
