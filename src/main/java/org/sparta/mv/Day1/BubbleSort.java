@@ -15,7 +15,6 @@ public class BubbleSort {
                 }
             }
         }
-
         return numbers;
     }
 
@@ -25,32 +24,29 @@ public class BubbleSort {
         numbers[count] = placeHolder;
     }
 
-//    public static int[] arrJoin(int[] numbers, int[] numbers2) {
-//        int[] joined = new int[numbers.length + numbers2.length];
-//        int count = 0;
-//        int count2 = false;
-//        int[] var5 = numbers;
-//        int var6 = numbers.length;
-//
-//        int var7;
-//        int num2;
-//        for(var7 = 0; var7 < var6; ++var7) {
-//            num2 = var5[var7];
-//            joined[count] = num2;
-//            ++count;
-//        }
-//
-//        var5 = numbers2;
-//        var6 = numbers2.length;
-//
-//        for(var7 = 0; var7 < var6; ++var7) {
-//            num2 = var5[var7];
-//            joined[count] = num2;
-//            ++count;
-//        }
-//
-//        bubbleSort(joined);
-//        return joined;
-
+    public static int[] arrJoin(int[] numbers, int[] otherNumbers) {
+        int numbersCounter = 0;
+        int otherNumbersCounter = 0;
+        int total = numbers.length + otherNumbers.length;
+        int[] sorted = new int[total];
+        for(int i = 0 ; i < total ; i++){
+            if(numbersCounter >= numbers.length){
+                sorted[i] = otherNumbers[otherNumbersCounter];
+                otherNumbersCounter++;
+            }
+            else if(otherNumbersCounter >= otherNumbers.length){
+                sorted[i] = numbers[numbersCounter];
+                numbersCounter ++;
+            }
+            else if(numbers[numbersCounter] <= otherNumbers[otherNumbersCounter]){
+                sorted[i] = numbers[numbersCounter];
+                numbersCounter++;
+            }else{
+                sorted[i] = otherNumbers[otherNumbersCounter];
+                otherNumbersCounter ++;
+            }
+        }
+        return sorted;
+    }
 }
 
