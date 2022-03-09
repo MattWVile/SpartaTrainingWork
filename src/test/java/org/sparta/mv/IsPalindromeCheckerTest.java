@@ -2,6 +2,7 @@ package org.sparta.mv;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.sparta.mv.Day1.IsPalindromeChecker;
 
 
 public class IsPalindromeCheckerTest {
@@ -17,10 +18,10 @@ public class IsPalindromeCheckerTest {
         Assertions.assertEquals("RAceCar", IsPalindromeChecker.longestPalindrome("I have a RAceCar that makes me say wOw"));
         Assertions.assertEquals("There is no palindrome", IsPalindromeChecker.longestPalindrome("I have a car that amazes me"));
     }
-    @Test
-    void fibonacciFinder(){
-        Assertions.assertEquals(0, FibonacciSequence.fibbonacciFinder(0));
-        Assertions.assertEquals("I need a positive integer to work!", FibonacciSequence.fibbonacciFinder(-2));
-        Assertions.assertEquals(8, FibonacciSequence.fibbonacciFinder(6));
-    }
+//    @Test
+//    void fibonacciFinder(){
+////        Assertions.assertEquals(0, FibonacciSequence.fibonacciFinder(0));
+////        Assertions.assertEquals(0, FibonacciSequence.fibonacciFinder(-2));
+////        Assertions.assertEquals(8, FibonacciSequence.fibonacciFinder(6));
+//    }
 }
