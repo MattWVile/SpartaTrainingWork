@@ -11,7 +11,7 @@ public class FibonnacciTests {
     @Test
     @DisplayName("Fibonnacci Test Should Return The Correct Number In The Sequence")
     void fibonnacciTestShouldReturnTheCorrectNumberInTheSequence() {
-        assertEquals((5), FibonacciSequence.fibonacciFinder(4));
+        assertEquals((6765), FibonacciSequence.fibonacciFinder(20));
     }
     @Test
     @DisplayName("Fibonnacci Test Should Return 0 for 0")
