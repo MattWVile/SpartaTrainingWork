@@ -7,9 +7,9 @@ public class Dog extends Animal {
         super(name, breed, age);
     }
 
-    public void speak(String owner) {
+    public static String speak(String owner, Dog dog) {
         PrintStream var10000 = System.out;
-        String var10001 = this.getName();
-        var10000.println(var10001 + " speaks to his owner, " + owner);
+        String var10001 = dog.getName();
+        return var10001 + " speaks to his owner, " + owner;
     }
 }
