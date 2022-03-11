@@ -21,18 +21,24 @@ public class DogTest {
     @DisplayName("Should be able to view dog name")
     void shouldBeAbleToViewDogName() {
         Dog clifford = new Dog("Clifford", "BigRed", 10);
-        Assertions.assertEquals("Clifford",clifford.getName());
+        assertEquals("Clifford",clifford.getName());
     }
     @Test
     @DisplayName("Should be able to view dog breed")
     void shouldBeAbleToViewDogBreed() {
         Dog clifford = new Dog("Clifford", "BigRed", 10);
-        Assertions.assertEquals("Clifford",clifford.getName());
+        assertEquals("Clifford",clifford.getName());
     }
     @Test
     @DisplayName("Should be able to view dog Age")
     void shouldBeAbleToViewDogAge() {
         Dog clifford = new Dog("Clifford", "BigRed", 10);
-        Assertions.assertEquals("Clifford",clifford.getName());
+        assertEquals("Clifford",clifford.getName());
+    }
+
+    @Test
+    @DisplayName("IS name a String")
+    void isNameAString() {
+        Assertions.assertEquals(String.class,"Felix".getClass());
     }
 }
