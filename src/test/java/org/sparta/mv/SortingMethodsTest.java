@@ -25,6 +25,6 @@ public class SortingMethodsTest {
         int[] in = {6,7,8,9,10};
         int[] in2 = {1,2,3,4,5};
         int[] out = {1,2,3,4,5,6,7,8,9,10};
-        Assertions.assertArrayEquals(out, BubbleSort.arrJoin(in,in2));
+        Assertions.assertArrayEquals(out, BubbleSort.arrJoin(in, in2));
     }
 }
