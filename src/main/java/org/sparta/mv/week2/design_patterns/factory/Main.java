@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Speaker myDog = AnimalFactory.getAnimal(Animal.CAT);
         System.out.println(myDog.speak());
-        
+
     }
 }
