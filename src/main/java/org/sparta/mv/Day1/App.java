@@ -13,5 +13,13 @@ public class App {
         BubbleSort.bubbleSort(arrayToSort2);
         System.out.println(Arrays.toString(arrayToSort));
         System.out.println(Arrays.toString(arrayToSort2));
+
+        System.out.println(check(arrayToSort, 3));
+    }
+    private static boolean check(int[] arr, int toCheckValue) {
+        Arrays.sort(arr);
+        int res = Arrays.binarySearch(arr, toCheckValue);
+        boolean test = res > 0 ? true : false;
+        return test;
     }
 }
